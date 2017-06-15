@@ -1,10 +1,11 @@
 * {
 	box-sizing: border-box;
+	
 }
 
 html {
 	position: relative;
-	min-height: 100%;
+	height: 100%;
 }
 
 body {
@@ -12,6 +13,8 @@ body {
 	color: #777777;
 	background-image: url("../image/gray_jean.png");
 	background-position: repeat;
+	height: 100%;
+	
 }
 
 header {
@@ -48,6 +51,7 @@ img {
 	width: 960px;
 	margin-right: auto;
 	margin-left: auto;
+
 }
 
 .site-header {
@@ -95,7 +99,6 @@ img {
 	background: #ffffff;
 	border: 1px solid #dddddd;
 	box-sizing: border-box;
-
 }
 
 .main-content {
@@ -138,7 +141,7 @@ img {
 	color: #4aaaa5;
 }
 
-.site-footer {
+.site-footer{
 	color: #ccc;
 	font-size: 12px;
 	text-align: center;
@@ -150,7 +153,9 @@ img {
 	bottom: 0;
 	width: 100%;
 	height: 100px;
+	clear: both;
 }
+
 .footer-content {
 	padding-top: 40px;
 }
@@ -220,8 +225,7 @@ label {
 
  .portfolio-container {
 		width: 100%;
-		height: auto;
- }
+	}
 
  .portfolio-title {
 	color: #fff;
