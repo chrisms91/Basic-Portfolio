@@ -14,7 +14,6 @@ body {
 	background-image: url("../image/gray_jean.png");
 	background-position: repeat;
 	height: 100%;
-	
 }
 
 header {
@@ -47,11 +46,11 @@ img {
 	width: auto;
 	height: 280px;
 }
+
 .container {
 	width: 960px;
 	margin-right: auto;
 	margin-left: auto;
-
 }
 
 .site-header {
@@ -99,6 +98,13 @@ img {
 	background: #ffffff;
 	border: 1px solid #dddddd;
 	box-sizing: border-box;
+	margin-bottom: 150px;
+}
+
+.main-section:after {
+	 display: table;
+  clear: both;
+  content: "";
 }
 
 .main-content {
@@ -148,12 +154,15 @@ img {
 	margin-top: 40px;
 	border-top: solid 8px #4aaaa5;
 	background-color: #666666;
-	position: absolute;
+	position: fixed;
 	left: 0;
 	bottom: 0;
 	width: 100%;
 	height: 100px;
 	clear: both;
+	z-index: 3;
+
+	
 }
 
 .footer-content {
@@ -223,18 +232,11 @@ label {
  *********  Portfolio  **********
  ********************************/
 
- .portfolio-container {
+/* .portfolio-container {
 		width: 100%;
 		height: auto;
 	}
-
-	.portfolio-container:after {
-   content: " "; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
-	}
+*/
 
  .portfolio-title {
 	color: #fff;
@@ -267,7 +269,7 @@ label {
 .portfolio-img {
 	width: 100%;
 	display: block;
-	height: 170px;
+	height: auto;
 	z-index: 2;
 /*	height: auto;
 	overflow: hidden;*/
@@ -280,6 +282,13 @@ label {
     margin-bottom: 20px;
     margin: 10px;
     overflow: hidden ;
+}
+
+/* Clearfix */
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
 }
 
 
